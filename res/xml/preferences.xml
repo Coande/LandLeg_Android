@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="基本设置" >
+        <EditTextPreference
+            android:key="username"
+
+            android:title="宽带账号" />
+        <EditTextPreference
+            android:key="password"
+
+            android:title="宽带密码" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="高级设置" >
+        <CheckBoxPreference
+            android:key="isUse"
+            android:defaultValue="false"
+            android:title="启用高级设置"
+            android:summary="勾选后下面的设置才生效，不勾选则自动获取当前客户端信息进行拨号" />
+
+        <EditTextPreference
+            android:key="clientip"
+            android:title="客户端IP地址"
+            android:summary="指定客户端IP地址进行拨号" />
+        <EditTextPreference
+            android:key="clientmac"
+            android:title="客户端MAC地址"
+            android:summary="指定客户端MAC地址进行拨号"
+             />
+<!--         <EditTextPreference
+            android:key="time"
+            android:defaultValue="30"
+            android:title="维持连接间隔时间" /> -->
+        <EditTextPreference
+            android:key="nasip"
+            android:title="NASIP地址"
+            android:summary="指定宽带接入服务器的IP地址进行拨号"
+             />
+    </PreferenceCategory>
+
+</PreferenceScreen>
