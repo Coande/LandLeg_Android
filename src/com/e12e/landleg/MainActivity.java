@@ -83,6 +83,9 @@ public class MainActivity extends ActionBarActivity {
 				case LOGINFAILED:
 					message = "登录失败：" + (String) msg.obj;
 					break;
+				case LOGINEXCEPTION:
+					message="登录时出现异常";
+					break;
 				case VERIFYCODEEXCEPTION:
 					message = "获取验证码时发生异常";
 					break;
